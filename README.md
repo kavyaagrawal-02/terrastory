@@ -9,7 +9,9 @@ Plain HTML, CSS and JavaScript. No build step. Hosted on Cloudflare Pages.
 
 | File | What it is |
 |---|---|
-| `index.html` | The main one-page site |
+| `index.html` | Home page |
+| `gifts.html`, `resorts.html`, `land.html`, `research.html`, `professionals.html` | Pages for each audience |
+| `founder.html` | Founder page (replace `images/founder.svg` with your photo) |
 | `style.css` | All design: colours, fonts, layout, night map |
 | `script.js` | Your links (WhatsApp, form, Instagram, email, UPI QR) at the top, plus small interactions |
 | `privacy.html`, `terms.html` | Legal pages |

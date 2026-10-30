@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Plot Through Time: Satellite History of Land & Plots in India | Terrastory</title>
+  <meta name="description" content="See how the area around a plot changed since 2000: buildings, green cover, water and roads, from satellite imagery. Reports from ₹999 in 3 days.">
+  <link rel="canonical" href="https://terrastory.in/land.html">
+  <meta name="theme-color" content="#F6F1E7" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#14202B" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Terrastory">
+  <meta property="og:title" content="Plot Through Time: Satellite History of Land & Plots in India | Terrastory">
+  <meta property="og:description" content="See how the area around a plot changed since 2000: buildings, green cover, water and roads, from satellite imagery. Reports from ₹999 in 3 days.">
+  <meta property="og:url" content="https://terrastory.in/land.html">
+  <meta property="og:image" content="https://terrastory.in/images/og-image.jpg">
+  <meta property="og:locale" content="en_IN">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..650;1,9..144,300..500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="style.css">
+  <script>try { var t = localStorage.getItem('ts-theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}</script>
+  <script type="application/ld+json">
+  {
+   "@context": "https://schema.org",
+   "@type": "Service",
+   "name": "Plot Through Time report",
+   "description": "Satellite change report showing how the area around a plot changed since 2000.",
+   "provider": {
+    "@type": "ProfessionalService",
+    "name": "Terrastory",
+    "url": "https://terrastory.in/"
+   },
+   "areaServed": {
+    "@type": "Country",
+    "name": "India"
+   },
+   "offers": {
+    "@type": "Offer",
+    "price": "999",
+    "priceCurrency": "INR"
+   }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+   "@context": "https://schema.org",
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Is this a legal or survey document?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. It's a geographic screening based on satellite and public data. It is not title verification, a boundary survey, a valuation, an engineering assessment or a statutory approval."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do I need the exact plot boundary?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. A Google Maps pin is enough. A rough boundary, a sketch or the plot size helps us mark it more clearly."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How far back can you go?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Usually to around 2000, using freely available satellite archives. Older or very detailed imagery depends on what exists for that area."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can it show flooding or waterlogging?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It can show where water has appeared in past satellite images and how low-lying the area is. That's useful screening, not a flood certificate."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can I use this to check land in my village from abroad?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Many people use it to see how family or inherited land and its surroundings have changed, without travelling."
+     }
+    }
+   ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <!-- Reusable symbols -->
+  <svg width="0" height="0" class="visually-hidden" aria-hidden="true" focusable="false">
+    <symbol id="compass" viewBox="0 0 40 40">
+      <circle cx="20" cy="20" r="17" fill="none" stroke="currentColor" stroke-width="1.4"/>
+      <circle cx="20" cy="20" r="12.5" fill="none" stroke="currentColor" stroke-width=".7" stroke-dasharray="1.5 2.4"/>
+      <path d="M20 3 L23.2 20 L20 37 L16.8 20 Z" fill="currentColor" opacity=".25"/>
+      <path d="M20 3 L23.2 20 L16.8 20 Z" fill="var(--ochre)"/>
+      <path d="M3 20 L20 17.4 L37 20 L20 22.6 Z" fill="currentColor" opacity=".55"/>
+      <circle cx="20" cy="20" r="2" fill="currentColor"/>
+    </symbol>
+    <symbol id="scalebar" viewBox="0 0 220 26">
+      <g fill="none" stroke="currentColor" stroke-width="1">
+        <rect x="10.5" y="8.5" width="200" height="6"/>
+      </g>
+      <g fill="currentColor">
+        <rect x="10.5" y="8.5" width="25" height="6"/><rect x="60.5" y="8.5" width="25" height="6"/>
+        <rect x="110.5" y="8.5" width="50" height="6"/>
+      </g>
+      <g font-family="JetBrains Mono, monospace" font-size="7" fill="currentColor" text-anchor="middle">
+        <text x="10.5" y="24">0</text><text x="60.5" y="24">1</text><text x="110.5" y="24">2</text><text x="210.5" y="24">4 km</text>
+      </g>
+    </symbol>
+  </svg>
+
+  <header class="site-header" id="top">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html" aria-label="Terrastory home">
+        <svg class="brand-mark" aria-hidden="true"><use href="#compass"/></svg>
+        <span class="brand-name">Terrastory</span>
+      </a>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="gifts.html">Gifts</a></li>
+          <li><a href="resorts.html">Resorts</a></li>
+          <li><a href="land.html" aria-current="page">Land</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="professionals.html">Professionals</a></li>
+          <li><a href="index.html#work">Work</a></li>
+          <li class="nav-order"><a class="btn btn-primary" data-form href="index.html#order">Order a Map</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle" type="button" aria-label="Switch to night map" title="Night map">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path class="sun" d="M12 4V2m0 20v-2m8-8h2M2 12h2m13.7-5.7 1.4-1.4M4.9 19.1l1.4-1.4m0-11.4L4.9 4.9m14.2 14.2-1.4-1.4M12 17a5 5 0 1 0 0-10 5 5 0 0 0 0 10z"/><path class="moon" d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
+        </button>
+        <a class="btn btn-primary btn-sm header-cta" data-form href="index.html#order">Order a Map</a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="wrap page-hero-grid">
+        <div>
+          <p class="crumb"><a href="index.html">Terrastory</a> <span aria-hidden="true">/</span> Land &amp; plots</p>
+          <p class="coord">18.52°N 73.86°E <span>Pune</span></p>
+          <h1 id="page-title">See how the land around a plot changed since 2000.</h1>
+          <p class="hero-sub">Plot Through Time puts satellite views of the same place side by side, so you can see what changed: new buildings, green cover, water and roads.</p>
+          <div class="btn-row">
+            <a class="btn btn-primary" data-wa="Hi Terrastory! I&#x27;d like a Plot Through Time report.&#10;Plot location (Google Maps pin): " href="index.html#order">Chat on WhatsApp</a>
+            <a class="btn btn-ghost" data-form href="index.html#order">Order with the form</a>
+          </div>
+        </div>
+        <figure class="print print-tilt-r page-hero-print">
+          <img src="images/work-3.webp" width="1200" height="900" alt="Sample Plot Through Time comparison of the same plot in 2000 and 2026, with new buildings appearing around it.">
+          <figcaption>Studio sample</figcaption>
+        </figure>
+      </div>
+    </section>
+    <section class="section">
+      <div class="wrap pro-grid">
+        <div>
+          <p class="coord">18.52°N 73.86°E <span>Pune</span></p>
+          <h2>What's in the report</h2>
+          <p class="lede">A short visual report in plain language. No jargon, no GIS knowledge needed.</p>
+          <p class="price-line"><span class="price">From ₹999</span> · Ready in 3 days</p>
+          <a class="btn btn-primary" data-wa="Hi Terrastory! I&#x27;d like a Plot Through Time report.&#10;Plot location (Google Maps pin): &#10;Rough boundary or plot size (if known): &#10;What I want to know: " href="index.html#order">Order this report</a>
+        </div>
+        <ul class="legend-list" role="list">
+          <li><span class="key key-area" aria-hidden="true"></span>Satellite views of the area at several points from 2000 to today</li>
+          <li><span class="key key-area" aria-hidden="true"></span>How much land around the plot has been built on</li>
+          <li><span class="key key-area" aria-hidden="true"></span>Change in trees, fields and green cover</li>
+          <li><span class="key key-line" aria-hidden="true"></span>Lakes, streams and water that appeared, shrank or disappeared</li>
+          <li><span class="key key-dash" aria-hidden="true"></span>Roads and access that came up over the years</li>
+          <li><span class="key key-point" aria-hidden="true"></span>A plain-language summary of what changed</li>
+        </ul>
+      </div>
+    </section>
+    <section class="section section-tint">
+      <div class="wrap">
+        <p class="coord">17.39°N 78.49°E <span>Hyderabad</span></p>
+        <h2>Who it's for</h2>
+        <ul class="tiles" role="list">
+          <li class="tile"><h3>Buying a plot</h3><p>See whether the area is growing, how green it has stayed and what's come up nearby.</p></li>
+          <li class="tile"><h3>Family or inherited land</h3><p>Check how land back home has changed, especially if you live far away.</p></li>
+          <li class="tile"><h3>Before a site visit</h3><p>Know the area's story before you travel to see it.</p></li>
+          <li class="tile"><h3>Early project screening</h3><p>A quick first look for builders and investors, before detailed studies.</p></li>
+        </ul>
+      </div>
+    </section>
+    <section class="section section-slim">
+      <div class="wrap">
+        <aside class="note" aria-label="What this report is not">
+          <h2 class="note-title">What this report is not</h2>
+          <p>Plot Through Time is a geographic screening built from satellite and public data. It is not title verification, a boundary survey, a valuation, an engineering assessment or a statutory approval. For buying decisions, also consult a lawyer and a licensed surveyor.</p>
+        </aside>
+      </div>
+    </section>
+    <section class="section">
+      <div class="wrap">
+        <p class="coord">13.08°N 80.27°E <span>Chennai</span></p>
+        <h2>How it works</h2>
+        <ol class="steps">
+          <li class="step">
+            <span class="step-num" aria-hidden="true">01</span>
+            <h3>Send the pin</h3>
+            <p>A Google Maps pin, and a rough boundary if you have one.</p>
+          </li>
+          <li class="step">
+            <span class="step-num" aria-hidden="true">02</span>
+            <h3>Tell us your question</h3>
+            <p>Buying, checking family land, or planning a project.</p>
+          </li>
+          <li class="step">
+            <span class="step-num" aria-hidden="true">03</span>
+            <h3>We compare the years</h3>
+            <p>We gather satellite views across two decades and mark what changed.</p>
+          </li>
+          <li class="step">
+            <span class="step-num" aria-hidden="true">04</span>
+            <h3>Receive the report</h3>
+            <p>A clear visual report, delivered digitally after payment.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+    <section class="section" id="faq">
+      <div class="wrap faq-grid">
+        <div>
+          <p class="coord">12.97°N 77.59°E <span>Bengaluru</span></p>
+          <h2>Questions</h2>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>Is this a legal or survey document?</summary>
+            <p>No. It's a geographic screening based on satellite and public data. It is not title verification, a boundary survey, a valuation, an engineering assessment or a statutory approval.</p>
+          </details>
+          <details>
+            <summary>Do I need the exact plot boundary?</summary>
+            <p>No. A Google Maps pin is enough. A rough boundary, a sketch or the plot size helps us mark it more clearly.</p>
+          </details>
+          <details>
+            <summary>How far back can you go?</summary>
+            <p>Usually to around 2000, using freely available satellite archives. Older or very detailed imagery depends on what exists for that area.</p>
+          </details>
+          <details>
+            <summary>Can it show flooding or waterlogging?</summary>
+            <p>It can show where water has appeared in past satellite images and how low-lying the area is. That's useful screening, not a flood certificate.</p>
+          </details>
+          <details>
+            <summary>Can I use this to check land in my village from abroad?</summary>
+            <p>Yes. Many people use it to see how family or inherited land and its surroundings have changed, without travelling.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+    <section class="section cta" aria-labelledby="cta-title">
+      <div class="wrap">
+        <h2 id="cta-title">Which plot should we look at?</h2>
+        <p class="cta-sub">Send a pin and we'll show you its story.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" data-wa="Hi Terrastory! I&#x27;d like a Plot Through Time report. The plot is here: " href="index.html#order">Chat on WhatsApp</a>
+          <a class="btn btn-ghost" data-form href="index.html#order">Order with the form</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html">
+          <svg class="brand-mark" aria-hidden="true"><use href="#compass"/></svg>
+          <span class="brand-name">Terrastory</span>
+        </a>
+        <p>Every place has a story. We map it.</p>
+      </div>
+      <nav aria-label="Maps for">
+        <h2 class="footer-h">Maps for</h2>
+        <ul>
+          <li><a href="gifts.html">Gifts</a></li>
+          <li><a href="resorts.html">Resorts &amp; homestays</a></li>
+          <li><a href="land.html">Land &amp; plots</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="professionals.html">Professionals</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Studio">
+        <h2 class="footer-h">Studio</h2>
+        <ul>
+          <li><a href="index.html#work">Work</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="founder.html">Founder</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="terms.html">Terms</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h2 class="footer-h">Contact</h2>
+        <ul>
+          <li><a data-email href="index.html#order">Email</a></li>
+          <li><a data-wa="Hi Terrastory!" href="index.html#order">WhatsApp</a></li>
+          <li><a data-instagram href="index.html#order" rel="noopener">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap footer-fine">
+      <p>Data credits: Contains modified Copernicus Sentinel data; Landsat imagery courtesy of USGS; map data © OpenStreetMap contributors. India boundaries as per Survey of India.</p>
+      <p>Maps and reports are for information and design purposes. They are not legal, survey or engineering documents.</p>
+      <p>© 2026 Terrastory. Proprietor: Kavya Agrawal.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
