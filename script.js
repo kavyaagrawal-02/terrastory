@@ -77,6 +77,24 @@ const TERRASTORY = {
     document.addEventListener("keydown", (e) => { if (e.key === "Escape" && nav.classList.contains("is-open")) { close(); menuBtn.focus(); } });
   }
 
+  /* ---------- Services dropdown ---------- */
+  document.querySelectorAll(".has-sub").forEach((li) => {
+    const btn = li.querySelector(".sub-toggle");
+    const set = (open) => { li.classList.toggle("is-open", open); btn.setAttribute("aria-expanded", String(open)); };
+    const desktop = window.matchMedia("(min-width: 960px) and (hover: hover)");
+    let hoverOpenedAt = 0;
+    btn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      if (Date.now() - hoverOpenedAt < 500) return; // just opened by hover; keep it open
+      set(!li.classList.contains("is-open"));
+    });
+    li.addEventListener("mouseenter", () => { if (desktop.matches && !li.classList.contains("is-open")) { hoverOpenedAt = Date.now(); set(true); } });
+    li.addEventListener("mouseleave", () => { if (desktop.matches) set(false); });
+    document.addEventListener("click", (e) => { if (!li.contains(e.target)) set(false); });
+    li.addEventListener("keydown", (e) => { if (e.key === "Escape") { set(false); btn.focus(); } });
+    li.addEventListener("focusout", (e) => { if (desktop.matches && !li.contains(e.relatedTarget)) set(false); });
+  });
+
   /* ---------- Header border on scroll ---------- */
   const header = document.querySelector(".site-header");
   if (header) {

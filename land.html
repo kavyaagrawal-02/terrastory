@@ -128,20 +128,28 @@
       </a>
       <nav class="site-nav" id="site-nav" aria-label="Main">
         <ul>
-          <li><a href="gifts.html">Gifts</a></li>
-          <li><a href="resorts.html">Resorts</a></li>
-          <li><a href="land.html" aria-current="page">Land</a></li>
-          <li><a href="research.html">Research</a></li>
-          <li><a href="professionals.html">Professionals</a></li>
+          <li class="has-sub is-current">
+            <button class="sub-toggle" type="button" aria-expanded="false" aria-controls="services-menu">Services<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5"/></svg></button>
+            <ul class="submenu" id="services-menu">
+              <li><a href="gifts.html"><span class="sub-title">Map Gifts</span><span class="sub-text">Hometown, village and memory maps</span></a></li>
+              <li><a href="resorts.html"><span class="sub-title">Resort &amp; Homestay Maps</span><span class="sub-text">Around Us, trail and welcome maps</span></a></li>
+              <li><a href="land.html" aria-current="page"><span class="sub-title">Land &amp; Plot Reports</span><span class="sub-text">How an area changed since 2000</span></a></li>
+              <li><a href="research.html"><span class="sub-title">Research Maps</span><span class="sub-text">Study area, LULC, NDVI, change</span></a></li>
+              <li><a href="professionals.html"><span class="sub-title">Professional Mapping</span><span class="sub-text">EIA, real estate, site analysis</span></a></li>
+            </ul>
+          </li>
           <li><a href="index.html#work">Work</a></li>
-          <li class="nav-order"><a class="btn btn-primary" data-form href="index.html#order">Order a Map</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="nav-order"><a class="btn btn-primary" data-form href="contact.html">Order a Map</a></li>
         </ul>
       </nav>
       <div class="header-actions">
         <button class="theme-toggle" type="button" aria-label="Switch to night map" title="Night map">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path class="sun" d="M12 4V2m0 20v-2m8-8h2M2 12h2m13.7-5.7 1.4-1.4M4.9 19.1l1.4-1.4m0-11.4L4.9 4.9m14.2 14.2-1.4-1.4M12 17a5 5 0 1 0 0-10 5 5 0 0 0 0 10z"/><path class="moon" d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
         </button>
-        <a class="btn btn-primary btn-sm header-cta" data-form href="index.html#order">Order a Map</a>
+        <a class="btn btn-primary btn-sm header-cta" data-form href="contact.html">Order a Map</a>
         <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
           <span></span><span></span>
         </button>
@@ -158,8 +166,8 @@
           <h1 id="page-title">See how the land around a plot changed since 2000.</h1>
           <p class="hero-sub">Plot Through Time puts satellite views of the same place side by side, so you can see what changed: new buildings, green cover, water and roads.</p>
           <div class="btn-row">
-            <a class="btn btn-primary" data-wa="Hi Terrastory! I&#x27;d like a Plot Through Time report.&#10;Plot location (Google Maps pin): " href="index.html#order">Chat on WhatsApp</a>
-            <a class="btn btn-ghost" data-form href="index.html#order">Order with the form</a>
+            <a class="btn btn-primary" data-wa="Hi Terrastory! I&#x27;d like a Plot Through Time report.&#10;Plot location (Google Maps pin): " href="contact.html">Chat on WhatsApp</a>
+            <a class="btn btn-ghost" data-form href="contact.html">Order with the form</a>
           </div>
         </div>
         <figure class="print print-tilt-r page-hero-print">
@@ -175,7 +183,7 @@
           <h2>What's in the report</h2>
           <p class="lede">A short visual report in plain language. No jargon, no GIS knowledge needed.</p>
           <p class="price-line"><span class="price">From ₹999</span> · Ready in 3 days</p>
-          <a class="btn btn-primary" data-wa="Hi Terrastory! I&#x27;d like a Plot Through Time report.&#10;Plot location (Google Maps pin): &#10;Rough boundary or plot size (if known): &#10;What I want to know: " href="index.html#order">Order this report</a>
+          <a class="btn btn-primary" data-wa="Hi Terrastory! I&#x27;d like a Plot Through Time report.&#10;Plot location (Google Maps pin): &#10;Rough boundary or plot size (if known): &#10;What I want to know: " href="contact.html">Order this report</a>
         </div>
         <ul class="legend-list" role="list">
           <li><span class="key key-area" aria-hidden="true"></span>Satellite views of the area at several points from 2000 to today</li>
@@ -270,8 +278,8 @@
         <h2 id="cta-title">Which plot should we look at?</h2>
         <p class="cta-sub">Send a pin and we'll show you its story.</p>
         <div class="btn-row">
-          <a class="btn btn-primary" data-wa="Hi Terrastory! I&#x27;d like a Plot Through Time report. The plot is here: " href="index.html#order">Chat on WhatsApp</a>
-          <a class="btn btn-ghost" data-form href="index.html#order">Order with the form</a>
+          <a class="btn btn-primary" data-wa="Hi Terrastory! I&#x27;d like a Plot Through Time report. The plot is here: " href="contact.html">Chat on WhatsApp</a>
+          <a class="btn btn-ghost" data-form href="contact.html">Order with the form</a>
         </div>
       </div>
     </section>
@@ -286,40 +294,40 @@
         </a>
         <p>Every place has a story. We map it.</p>
       </div>
-      <nav aria-label="Maps for">
-        <h2 class="footer-h">Maps for</h2>
+      <nav aria-label="Services">
+        <h2 class="footer-h">Services</h2>
         <ul>
-          <li><a href="gifts.html">Gifts</a></li>
-          <li><a href="resorts.html">Resorts &amp; homestays</a></li>
-          <li><a href="land.html">Land &amp; plots</a></li>
-          <li><a href="research.html">Research</a></li>
-          <li><a href="professionals.html">Professionals</a></li>
+          <li><a href="gifts.html">Map Gifts</a></li>
+          <li><a href="resorts.html">Resort &amp; Homestay Maps</a></li>
+          <li><a href="land.html">Land &amp; Plot Reports</a></li>
+          <li><a href="research.html">Research Maps</a></li>
+          <li><a href="professionals.html">Professional Mapping</a></li>
         </ul>
       </nav>
-      <nav aria-label="Studio">
-        <h2 class="footer-h">Studio</h2>
+      <nav aria-label="Company">
+        <h2 class="footer-h">Company</h2>
         <ul>
           <li><a href="index.html#work">Work</a></li>
           <li><a href="index.html#about">About</a></li>
-          <li><a href="founder.html">Founder</a></li>
           <li><a href="index.html#faq">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
           <li><a href="privacy.html">Privacy</a></li>
           <li><a href="terms.html">Terms</a></li>
         </ul>
       </nav>
       <div>
-        <h2 class="footer-h">Contact</h2>
+        <h2 class="footer-h">Get in touch</h2>
         <ul>
-          <li><a data-email href="index.html#order">Email</a></li>
-          <li><a data-wa="Hi Terrastory!" href="index.html#order">WhatsApp</a></li>
-          <li><a data-instagram href="index.html#order" rel="noopener">Instagram</a></li>
+          <li><a data-wa="Hi Terrastory!" href="contact.html">WhatsApp</a></li>
+          <li><a data-email href="contact.html">Email</a></li>
+          <li><a data-instagram href="contact.html" rel="noopener">Instagram</a></li>
         </ul>
       </div>
     </div>
     <div class="wrap footer-fine">
       <p>Data credits: Contains modified Copernicus Sentinel data; Landsat imagery courtesy of USGS; map data © OpenStreetMap contributors. India boundaries as per Survey of India.</p>
       <p>Maps and reports are for information and design purposes. They are not legal, survey or engineering documents.</p>
-      <p>© 2026 Terrastory. Proprietor: Kavya Agrawal.</p>
+      <p>© 2026 Terrastory. All rights reserved.</p>
     </div>
   </footer>
 

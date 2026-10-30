@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Terrastory | Custom Maps, Satellite Map Gifts &amp; Place Reports</title>
-  <meta name="description" content="Terrastory is a map studio by geographer Kavya Agrawal. Custom hometown map gifts, illustrated resort maps, satellite plot history reports and research maps, made from real satellite and geographic data. Delivered across India.">
+  <meta name="description" content="Terrastory is a map studio making custom hometown map gifts, illustrated resort maps, satellite plot history reports and research maps from real satellite and geographic data. Delivered across India.">
   <meta name="theme-color" content="#F6F1E7" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#14202B" media="(prefers-color-scheme: dark)">
   <link rel="canonical" href="https://terrastory.in/">
@@ -90,20 +90,28 @@
       </a>
       <nav class="site-nav" id="site-nav" aria-label="Main">
         <ul>
-          <li><a href="gifts.html">Gifts</a></li>
-          <li><a href="resorts.html">Resorts</a></li>
-          <li><a href="land.html">Land</a></li>
-          <li><a href="research.html">Research</a></li>
-          <li><a href="professionals.html">Professionals</a></li>
+          <li class="has-sub">
+            <button class="sub-toggle" type="button" aria-expanded="false" aria-controls="services-menu">Services<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5"/></svg></button>
+            <ul class="submenu" id="services-menu">
+              <li><a href="gifts.html"><span class="sub-title">Map Gifts</span><span class="sub-text">Hometown, village and memory maps</span></a></li>
+              <li><a href="resorts.html"><span class="sub-title">Resort &amp; Homestay Maps</span><span class="sub-text">Around Us, trail and welcome maps</span></a></li>
+              <li><a href="land.html"><span class="sub-title">Land &amp; Plot Reports</span><span class="sub-text">How an area changed since 2000</span></a></li>
+              <li><a href="research.html"><span class="sub-title">Research Maps</span><span class="sub-text">Study area, LULC, NDVI, change</span></a></li>
+              <li><a href="professionals.html"><span class="sub-title">Professional Mapping</span><span class="sub-text">EIA, real estate, site analysis</span></a></li>
+            </ul>
+          </li>
           <li><a href="#work">Work</a></li>
-          <li class="nav-order"><a class="btn btn-primary" data-form href="#order">Order a Map</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="nav-order"><a class="btn btn-primary" data-form href="contact.html">Order a Map</a></li>
         </ul>
       </nav>
       <div class="header-actions">
         <button class="theme-toggle" type="button" aria-label="Switch to night map" title="Night map">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path class="sun" d="M12 4V2m0 20v-2m8-8h2M2 12h2m13.7-5.7 1.4-1.4M4.9 19.1l1.4-1.4m0-11.4L4.9 4.9m14.2 14.2-1.4-1.4M12 17a5 5 0 1 0 0-10 5 5 0 0 0 0 10z"/><path class="moon" d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
         </button>
-        <a class="btn btn-primary btn-sm header-cta" data-form href="#order">Order a Map</a>
+        <a class="btn btn-primary btn-sm header-cta" data-form href="contact.html">Order a Map</a>
         <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
           <span></span><span></span>
         </button>
@@ -192,7 +200,7 @@
           <a class="btn btn-primary" data-form href="#order">Order a Map</a>
           <a class="btn btn-ghost" href="#work">See Our Work</a>
         </div>
-        <p class="hero-note">Handmade by a geographer · Delivered digitally across India</p>
+        <p class="hero-note">Designed by hand · Delivered digitally across India</p>
       </div>
     </section>
 
@@ -427,7 +435,7 @@
         <div>
           <p class="coord">19.08°N 72.88°E <span>Mumbai</span></p>
           <h2 id="pro-title">For professionals</h2>
-          <p class="lede">Accurate, well-sourced maps for reports, approvals and brochures, made by a trained geographer.</p>
+          <p class="lede">Accurate, well-sourced maps for reports, approvals and brochures, built with research-grade GIS and remote sensing.</p>
           <a class="btn btn-ghost" data-wa="Hi Terrastory! I'd like a quote for professional maps.&#10;Project type: &#10;Location: &#10;Maps needed: &#10;Deadline: " href="#order">Request a quote</a>
           <a class="text-link" href="professionals.html">All professional services</a>
         </div>
@@ -549,7 +557,9 @@
             <li><h3>Made by hand</h3><p>No templates. Every map is designed around its place and its purpose.</p></li>
             <li><h3>Easy to order</h3><p>Send a pin on WhatsApp. No maps or GIS knowledge needed.</p></li>
           </ul>
-          <a class="text-link" href="founder.html">Meet the founder</a>
+          <aside class="founder-note" aria-label="Founder">
+            <p><strong>Founded by Kavya Agrawal</strong>, a geographer and cartographer specialising in remote sensing and GIS.</p>
+          </aside>
         </div>
       </div>
     </section>
@@ -625,40 +635,40 @@
         </a>
         <p>Every place has a story. We map it.</p>
       </div>
-      <nav aria-label="Maps for">
-        <h2 class="footer-h">Maps for</h2>
+      <nav aria-label="Services">
+        <h2 class="footer-h">Services</h2>
         <ul>
-          <li><a href="gifts.html">Gifts</a></li>
-          <li><a href="resorts.html">Resorts &amp; homestays</a></li>
-          <li><a href="land.html">Land &amp; plots</a></li>
-          <li><a href="research.html">Research</a></li>
-          <li><a href="professionals.html">Professionals</a></li>
+          <li><a href="gifts.html">Map Gifts</a></li>
+          <li><a href="resorts.html">Resort &amp; Homestay Maps</a></li>
+          <li><a href="land.html">Land &amp; Plot Reports</a></li>
+          <li><a href="research.html">Research Maps</a></li>
+          <li><a href="professionals.html">Professional Mapping</a></li>
         </ul>
       </nav>
-      <nav aria-label="Studio">
-        <h2 class="footer-h">Studio</h2>
+      <nav aria-label="Company">
+        <h2 class="footer-h">Company</h2>
         <ul>
           <li><a href="#work">Work</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="founder.html">Founder</a></li>
           <li><a href="#faq">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
           <li><a href="privacy.html">Privacy</a></li>
           <li><a href="terms.html">Terms</a></li>
         </ul>
       </nav>
       <div>
-        <h2 class="footer-h">Contact</h2>
+        <h2 class="footer-h">Get in touch</h2>
         <ul>
-          <li><a data-email href="#order">Email</a></li>
-          <li><a data-wa="Hi Terrastory!" href="#order">WhatsApp</a></li>
-          <li><a data-instagram href="#order" rel="noopener">Instagram</a></li>
+          <li><a data-wa="Hi Terrastory!" href="contact.html">WhatsApp</a></li>
+          <li><a data-email href="contact.html">Email</a></li>
+          <li><a data-instagram href="contact.html" rel="noopener">Instagram</a></li>
         </ul>
       </div>
     </div>
     <div class="wrap footer-fine">
       <p>Data credits: Contains modified Copernicus Sentinel data; Landsat imagery courtesy of USGS; map data © OpenStreetMap contributors. India boundaries as per Survey of India.</p>
       <p>Maps and reports are for information and design purposes. They are not legal, survey or engineering documents.</p>
-      <p>© 2026 Terrastory. Proprietor: Kavya Agrawal.</p>
+      <p>© 2026 Terrastory. All rights reserved.</p>
     </div>
   </footer>
 

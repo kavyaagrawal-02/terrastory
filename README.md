@@ -3,15 +3,15 @@
 Website for **Terrastory**, a map studio by Kavya Agrawal.
 *Every place has a story. We map it.*
 
-Plain HTML, CSS and JavaScript. No build step. Hosted on Cloudflare Pages.
+Plain HTML, CSS and JavaScript. No build step. Hosted on GitHub Pages: https://kavyaagrawal-02.github.io/terrastory/
 
 ## Files
 
 | File | What it is |
 |---|---|
-| `index.html` | Home page |
+| `index.html` | Home page (services overview, work, about, FAQ) |
 | `gifts.html`, `resorts.html`, `land.html`, `research.html`, `professionals.html` | Pages for each audience |
-| `founder.html` | Founder page (replace `images/founder.svg` with your photo) |
+| `contact.html` | Contact page: WhatsApp, form, email, Instagram, payment |
 | `style.css` | All design: colours, fonts, layout, night map |
 | `script.js` | Your links (WhatsApp, form, Instagram, email, UPI QR) at the top, plus small interactions |
 | `privacy.html`, `terms.html` | Legal pages |
