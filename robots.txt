@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://terrastory.in/sitemap.xml
+Sitemap: https://kavyaagrawal-02.github.io/terrastory/sitemap.xml

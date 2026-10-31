@@ -36,5 +36,4 @@ upiQr: "images/upi-qr.svg"    // change to "images/upi-qr.png" after uploading y
 (`work-1.webp` … `work-6.webp`), or upload a `.jpg` and change the matching `src` in `index.html`.
 Update the caption and `alt` text next to it.
 
-**Domain:** the site assumes `https://terrastory.in`. If you pick a different domain, replace
-`terrastory.in` in `index.html`, `robots.txt` and `sitemap.xml`.
+**Domain:** the site currently uses `https://kavyaagrawal-02.github.io/terrastory/`. When you buy a domain, replace that address in all `.html` files, `robots.txt` and `sitemap.xml`.
